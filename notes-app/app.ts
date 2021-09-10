@@ -25,7 +25,7 @@ yargs.command({
     handler: (argv: any) => {
         console.log(`Title: ${argv.title} \nBody: ${argv.body}`);
     }
-})
+});
 
 //Create remove command
 yargs.command({
@@ -34,7 +34,7 @@ yargs.command({
     handler: () => {
         console.log('Removing a note!');
     }
-})
+});
 
 //Create list command
 yargs.command({
@@ -43,7 +43,7 @@ yargs.command({
     handler: () => {
         console.log('Listing all notes!');
     }
-})
+});
 
 //Create read command
 yargs.command({
@@ -52,6 +52,6 @@ yargs.command({
     handler: () => {
         console.log('Reading a note!');
     }
-})
+});
 
 yargs.parse();
